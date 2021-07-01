@@ -20,7 +20,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import es.jbp.comun.crud.elemento.ElementoUI;
 import es.jbp.comun.crud.elemento.ValorUI;
 import es.jbp.comun.crud.servicio.ServicioElemento;
-import es.jbp.comun.ges.dao.EntidadGes;
+import es.jbp.comun.ges.entidad.EntidadGes;
 import es.jbp.comun.ges.entidad.CampoGes;
 import es.jbp.comun.ges.entidad.ConsultaGes;
 import static es.jbp.comun.ges.entidad.ConsultaGes.CONSIMPR_ORIENTACION_HORIZONTAL;

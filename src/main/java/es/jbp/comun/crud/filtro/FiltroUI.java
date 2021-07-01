@@ -1,6 +1,6 @@
 package es.jbp.comun.crud.filtro;
 
-import es.jbp.comun.ges.dao.Filtro;
+import es.jbp.comun.ges.entidad.Filtro;
 import es.jbp.comun.ges.entidad.CampoGes;
 import es.jbp.comun.ges.entidad.ConsultaGes;
 import es.jbp.comun.utiles.conversion.Conversion;

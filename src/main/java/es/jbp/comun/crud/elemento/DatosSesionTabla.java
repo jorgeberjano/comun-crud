@@ -1,6 +1,6 @@
 package es.jbp.comun.crud.elemento;
 
-import es.jbp.comun.ges.dao.Filtro;
+import es.jbp.comun.ges.entidad.Filtro;
 import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;

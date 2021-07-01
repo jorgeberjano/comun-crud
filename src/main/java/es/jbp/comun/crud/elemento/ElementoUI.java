@@ -1,6 +1,6 @@
 package es.jbp.comun.crud.elemento;
 
-import es.jbp.comun.ges.dao.EntidadGes;
+import es.jbp.comun.ges.entidad.EntidadGes;
 import es.jbp.comun.ges.entidad.CampoGes;
 import es.jbp.comun.ges.entidad.ConsultaGes;
 import es.jbp.comun.ges.utilidades.ConversionValores;

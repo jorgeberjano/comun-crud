@@ -51,7 +51,7 @@ public class ServicioElemento {
     protected String mensajeError;
     protected Modo modo = Modo.TABLA;
 
-    public static enum Modo {
+    public enum Modo {
         TABLA,
         SELECCIONAR,
         MOSTRAR,
@@ -145,57 +145,6 @@ public class ServicioElemento {
         CampoGes campo = consultaOriginal.getCampoPorId(idCampo);
         return OperadoresFiltro.getOperadores(campo.getTipoDato());
     }
-
-//    /**
-//     * Obtiene un mapa con las opciones de valores de un campo y un nombre que
-//     * lo representa. Si el campo es enumerado devuelve los valores posibles. Si
-//     * el campo es de selección devuelve los valores posibles que pueden ser
-//     * seleccionados.
-//     *
-//     * @param idCampo El identificador del campo
-//     * @return El mapa
-//     */
-//    public Map<String, String> getMapaOpciones(String idCampo) {
-//
-//        Map<String, String> mapa = new LinkedHashMap<>();
-//
-//        CampoGes campo = getCampo(idCampo);
-//        if (campo == null) {
-//            return mapa;
-//        }
-//        List<String> opciones = campo.getOpcionesEnumerado();
-//        if (opciones != null && !opciones.isEmpty()) {
-//            for (int i = 0; i < opciones.size(); i++) {
-//                mapa.put(opciones.get(i), opciones.get(i));
-//            }
-//            return mapa;
-//        }
-//
-//        String idConsultaSeleccion = campo.getConsultaSeleccion();
-//        if (Conversion.isBlank(idConsultaSeleccion)) {
-//            return mapa;
-//        }
-//        ConsultaGes consulta = crud.getConsulta(idConsultaSeleccion);
-//        if (consulta == null) {
-//            return mapa;
-//        }
-//
-//        CampoGes campoClave = consulta.getCampoClave();
-//        CampoGes campoNombre = consulta.getCampoNombre();
-//        if (campoClave == null || campoNombre == null) {
-//            return mapa;
-//        }
-//
-//        AccesoEntidadesGes repositorioSeleccion = new AccesoEntidadesGes(consulta, crud.getGestorConexiones(), crud.getGestorSimbolos());
-//        PaginaEntidades<EntidadGes> entidades = repositorioSeleccion.getPagina(null, campoClave.getIdCampo(), false, 0, 100);
-//        entidades.getListaEntidades().stream().forEach((entidad) -> {
-//            String valorClave = Conversion.toString(entidad.get(campoClave.getIdCampo()));
-//            String valorNombre = Conversion.toString(entidad.get(campoNombre.getIdCampo()));
-//            mapa.put(valorClave, valorNombre);
-//        });
-//
-//        return mapa;
-//    }
 
     /**
      * Devuelve un mapa con los valores que tiene este campo en la base de datos
